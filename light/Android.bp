@@ -21,6 +21,7 @@ cc_binary {
     vintf_fragments: ["android.hardware.light@2.0-service.ginkgo.xml"],
     srcs: ["service.cpp", "Light.cpp"],
     shared_libs: [
+        "libbase",
         "libhardware",
         "libhidlbase",
         "liblog",
